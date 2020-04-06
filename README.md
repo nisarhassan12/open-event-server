@@ -11,6 +11,8 @@
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 [![Mailing List](https://img.shields.io/badge/Mailing%20List-FOSSASIA-blue.svg)](https://groups.google.com/forum/#!forum/open-event)
 [![Twitter Follow](https://img.shields.io/twitter/follow/eventyay.svg?style=social&label=Follow&maxAge=2592000?style=flat-square)](https://twitter.com/eventyay)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/fossasia/open-event-server)
+
 
 > **The Open Event Server enables organizers to manage events from concerts to conferences and meet-ups.**
 
@@ -283,7 +285,7 @@ We have the following branches :
  * **development**
 	 All development goes on in this branch. If you're making a contribution, please make a pull request to _development_.
 	 All PRs must pass a build check and a unit-test check on Travis (https://open-event-api-dev.herokuapp.com - Is running off of the development branch. It is hosted on Heroku.)
-	 
+
  * **master**
    This contains shipped code. After significant features/bug-fixes are accumulated on development, we make a version update and make a release. (https://api.eventyay.com - Is running off of the `master` branch. Hosted on Google Cloud Platform (Google Container Engine + Kubernetes).)
  * **gh-pages**

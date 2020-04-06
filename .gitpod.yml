@@ -1,0 +1,11 @@
+image: gitpod/workspace-postgres
+tasks:
+  - init: |
+        bash -c "echo 'export APP_CONFIG=config.DevelopmentConfig' >> ~/.bashrc"
+        pip3 install -r requirements.txt
+  - init: |
+        export DATABASE_URL=postgresql://test_user:test@127.0.0.1:5432/opev_test
+        export APP_CONFIG=config.TestingConfig
+        pip3 install -r requirements/tests.txt
+    command: python3 -m unittest discover tests/
+    openMode: split-right
